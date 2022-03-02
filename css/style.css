@@ -5,11 +5,13 @@ HEADER
 */
 
 .header {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   margin: 0 1.6rem;
   height: 6.4rem;
+  background-color: white;
+  /* position: fixed; */
 }
 
 .nav-group {
@@ -22,10 +24,11 @@ HEADER
 .nav-btn {
   background-color: white;
   border: none;
-  margin: 0 2.4rem;
+  margin: 0 1.6rem;
   border-radius: 50%;
   padding: 0.8rem;
   border: none;
+  cursor: pointer;
 }
 
 .nav-icon {
@@ -142,9 +145,113 @@ HEADER
 SLIDE MENU
 //////////////////////////////////
 */
-.side-menu {
+.side-menu.open {
+  height: 100%;
   width: 22rem;
-  float: left;
+  position: fixed;
+  z-index: 1;
+  top: 6.4rem;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-bottom: 3rem;
+
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.sidemenu-collapse .list-group-item,
+.side-menu .list-group .list-group-item {
+  text-decoration: none;
+  color: #030303;
+  display: block;
+  border: none;
+}
+
+.sidemenu-collapse .list-group-item:hover,
+.side-menu .list-group .list-group-item:hover {
+  background-color: #e9e9e9;
+}
+
+.list-group {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item {
+  padding: 0.8rem;
+}
+
+.sidemenu-collapse .list-group-item.active,
+.list-group .list-group-item.active {
+  font-weight: 500;
+  background-color: #e9e9e9;
+  color: #030303;
+}
+
+.side-menu-icon {
+  height: 2rem;
+  width: 2rem;
+  margin: 0.5rem 1.5rem;
+}
+
+.signin-group {
+  margin: 2rem 2rem 1rem 2rem;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.signin-group button {
+  margin-top: 1rem;
+  width: max-content;
+}
+
+.side-menu::-webkit-scrollbar {
+  /* display: none; */
+  width: 8px;
+}
+
+.side-menu:hover {
+  overflow-y: scroll;
+}
+.side-menu.close {
+  display: none;
+}
+
+.side-menu::-webkit-scrollbar-thumb {
+  height: 5.6rem;
+  background: hsla(0, 0%, 53.3%, 0.4);
+  border-radius: 5px;
+}
+
+.sidemenu-collapse {
+  height: 100%;
+  display: none;
+  width: 8rem;
+  top: 6.4rem;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 1;
+  display: none;
+}
+
+.btn-off-canvas {
+  height: 6.4rem;
+}
+
+.sidemenu-collapse .side-menu-icon {
+  width: 3.6rem;
+  height: 3.6rem;
 }
 
 /*
@@ -152,6 +259,7 @@ SLIDE MENU
 CATEGORIES
 //////////////////////////////////
 */
+
 .categories {
   margin-left: 22rem;
   display: flex;
@@ -160,13 +268,13 @@ CATEGORIES
   padding: 1rem 2rem;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+  scroll-behavior: smooth;
+  /* position: fixed; */
 }
 
 .categories-section {
   display: flex;
-  display: block;
   overflow: hidden;
-  position: relative;
 }
 
 .category {
@@ -180,7 +288,7 @@ CATEGORIES
   font-size: 1.6rem;
   cursor: pointer;
   transition: backgound-color 150ms;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .category:hover {
@@ -200,6 +308,7 @@ CATEGORIES
 .scroll-left-btn-backgound {
   display: none;
 }
+
 .scroll-right-btn-backgound {
   display: inline-flex;
 }
@@ -228,4 +337,17 @@ CATEGORIES
 
   height: 2.4rem;
   width: 2.4rem;
+}
+
+/*
+//////////////////////////////////
+VIDEOS
+//////////////////////////////////
+*/
+
+.videos {
+  margin-left: 22rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
 }
