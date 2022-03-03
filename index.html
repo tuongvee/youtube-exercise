@@ -29,7 +29,7 @@
   </head>
   <body>
     <!-- ================ HEADER ================ -->
-    <header class="header row align-items-center">
+    <header class="header row align-items-center sticky-top">
       <div class="nav-group .col-4 .col-sm-3">
         <button type="button" class="nav-btn">
           <ion-icon name="menu" class="nav-icon"></ion-icon>
@@ -223,7 +223,7 @@
         </div>
       </section>
       <!-- ================ CATEGORIES ================ -->
-      <div class="categories">
+      <div class="categories sticky">
         <div class="scroll-left-btn-backgound">
           <button class="scroll-left-btn" onclick="slide('left')">
             <ion-icon
@@ -265,25 +265,390 @@
 
       <!-- ================ VIDEOS ================ -->
       <div class="videos">
-        <div class="row">
-          <div class="col">
-            <div class="video-thumbnail">
+        <section class="video-section">
+          <article
+            class="video"
+            data-link="https://www.youtube.com/watch?v=wxscRuIrWzk"
+          >
+            <a href="" class="video-thumbnail" data-duration="4:09">
               <img
                 src="img/thumbnail/map-mo.jpg"
-                alt="Map mo Thumbnail"
+                alt="Thumbnail"
                 class="video-thumbnail-img"
               />
-              <span class="video-thumbnail-time">4:09</span>
+            </a>
+            <div class="video-info">
+              <a href="#"
+                ><img
+                  src="img/avatar/map-mo.jpg"
+                  alt="Avatar"
+                  class="channel-icon"
+              /></a>
+              <div class="video-details">
+                <div class="video-title">
+                  Mập mờ(Blue Remix) - PHÍ PHƯƠNG ANH ft RIN9
+                </div>
+                <div class="video-channel-name">Blue Remix</div>
+                <div class="video-metadata">
+                  <span>12M views</span>
+                  •
+                  <span>2 months ago</span>
+                </div>
+              </div>
             </div>
-            <a href="#"
-              ><img src="img/avatar/map-mo.jpg" alt="Map mo Avatar"
-            /></a>
-          </div>
-
-          <div class="col">2</div>
-          <div class="col">3</div>
-          <div class="col">4</div>
-        </div>
+          </article>
+          <article
+            class="video"
+            data-link="https://www.youtube.com/watch?v=A8yeJkAuD7I"
+          >
+            <a href="" class="video-thumbnail" data-duration="10:56">
+              <img
+                src="img/thumbnail/doraemon.jpg"
+                alt="Thumbnail"
+                class="video-thumbnail-img"
+              />
+            </a>
+            <div class="video-info">
+              <a href="#"
+                ><img
+                  src="img/avatar/pops-kids.jpg"
+                  alt="Avatar"
+                  class="channel-icon"
+              /></a>
+              <div class="video-details">
+                <div class="video-title">
+                  [S6] Doraemon Tiếng Việt - Bảo bối Hôm Nay - Khăn Trải Bàn Ẩm
+                  Thực
+                </div>
+                <div class="video-channel-name">Pops Kids</div>
+                <div class="video-metadata">
+                  <span>8,5M views</span>
+                  •
+                  <span>2 years ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="video"
+            data-link="https://www.youtube.com/watch?v=z_IfqxvKUUk"
+          >
+            <a href="" class="video-thumbnail" data-duration="11:34">
+              <img
+                src="img/thumbnail/nga-ukraine.jpg"
+                alt="Nga Ukraine Thumbnail"
+                class="video-thumbnail-img"
+              />
+            </a>
+            <div class="video-info">
+              <a href="#"
+                ><img
+                  src="img/avatar/fbnc-vietnam.jpg"
+                  alt="Avatar"
+                  class="channel-icon"
+              /></a>
+              <div class="video-details">
+                <div class="video-title">
+                  Nga - Ukraine tin mới nhất | Chiến tranh Ukraine bước qua
+                  chương mới thảm khốc hơn | FBNC
+                </div>
+                <div class="video-channel-name">FBNC Vietnam</div>
+                <div class="video-metadata">
+                  <span>1M views</span>
+                  •
+                  <span>15 hours ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="video"
+            data-link="https://www.youtube.com/watch?v=rxzmYcD_Bxg"
+          >
+            <a href="" class="video-thumbnail" data-duration="4:09">
+              <img
+                src="img/thumbnail/kong-godzilla-2021.jpg"
+                alt="Thumbnail"
+                class="video-thumbnail-img"
+              />
+            </a>
+            <div class="video-info">
+              <a href="#"
+                ><img
+                  src="img/avatar/vua-phim-review.jpg"
+                  alt="Avatar"
+                  class="channel-icon"
+              /></a>
+              <div class="video-details">
+                <div class="video-title">
+                  Đại Chiến Quái Vật Titan phần 3 - review phim Kong vs Godzilla
+                  2021
+                </div>
+                <div class="video-channel-name">Vua Phim Review</div>
+                <div class="video-metadata">
+                  <span>12K views</span>
+                  •
+                  <span>2 months ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="video"
+            data-link="hhttps://www.youtube.com/watch?v=0VM5wnbTDZY"
+          >
+            <a href="" class="video-thumbnail" data-duration="1:11:13">
+              <img
+                src="img/thumbnail/ngot-ngao.jpg"
+                alt="Thumbnail"
+                class="video-thumbnail-img"
+              />
+            </a>
+            <div class="video-info">
+              <a href="#"
+                ><img
+                  src="img/avatar/chi-linh.jpg"
+                  alt="Avatar"
+                  class="channel-icon"
+              /></a>
+              <div class="video-details">
+                <div class="video-title">
+                  Ngọt Ngào Đến Mấy Cũng Tan Thành Mây | Sau Lời Nói Anh Còn Yêu
+                  Em, Hoa Tàn Tình Tan Remix Hot TikTok
+                </div>
+                <div class="video-channel-name">Chii Linh</div>
+                <div class="video-metadata">
+                  <span>1M views</span>
+                  •
+                  <span>1 month ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="video"
+            data-link="https://www.youtube.com/watch?v=JiqhNfJYpu0"
+          >
+            <a href="" class="video-thumbnail" data-duration="4:13">
+              <img
+                src="img/thumbnail/cat-dog.jpg"
+                alt="Thumbnail"
+                class="video-thumbnail-img"
+              />
+            </a>
+            <div class="video-info">
+              <a href="#"
+                ><img
+                  src="img/avatar/pets-land.jpg"
+                  alt="Avatar"
+                  class="channel-icon"
+              /></a>
+              <div class="video-details">
+                <div class="video-title">
+                  Funniest Cats and Dogs 🐱🐶 Part 5
+                </div>
+                <div class="video-channel-name">Petlands</div>
+                <div class="video-metadata">
+                  <span>62M views</span>
+                  •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="video"
+            data-link="https://www.youtube.com/watch?v=wy2DgqL1P7s"
+          >
+            <a href="" class="video-thumbnail" data-duration="18:34">
+              <img
+                src="img/thumbnail/tom-jerry.jpg"
+                alt="Thumbnail"
+                class="video-thumbnail-img"
+              />
+            </a>
+            <div class="video-info">
+              <a href="#"
+                ><img
+                  src="img/avatar/wb-kids.jpg"
+                  alt="Avatar"
+                  class="channel-icon"
+              /></a>
+              <div class="video-details">
+                <div class="video-title">
+                  Tom & Jerry | Home But Not Alone! | Classic Cartoon
+                  Compilation | WB Kids
+                </div>
+                <div class="video-channel-name">WB Kids</div>
+                <div class="video-metadata">
+                  <span>72M views</span>
+                  •
+                  <span>2 years ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="video"
+            data-link="https://www.youtube.com/watch?v=Yw9Ra2UiVLw"
+          >
+            <a href="" class="video-thumbnail" data-duration="2:38">
+              <img
+                src="img/thumbnail/chim-sau.jpg"
+                alt="Thumbnail"
+                class="video-thumbnail-img"
+              />
+            </a>
+            <div class="video-info">
+              <a href="#"
+                ><img
+                  src="img/avatar/mck.jpg"
+                  alt="Avatar"
+                  class="channel-icon"
+              /></a>
+              <div class="video-details">
+                <div class="video-title">
+                  Chìm Sâu - RPT MCK (feat. Trung Trần) | Official Lyrics Video
+                </div>
+                <div class="video-channel-name">MCK // Nger</div>
+                <div class="video-metadata">
+                  <span>1M views</span>
+                  •
+                  <span>1 week ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="video-section trending-section">
+          <!-- <h1 class="trending-title">Trending</h1> -->
+          <article
+            class="video"
+            data-link="https://www.youtube.com/watch?v=nTNw2qzDg2M"
+          >
+            <a href="" class="video-thumbnail" data-duration="42:46">
+              <img
+                src="img/thumbnail/the-gioi-tuan-qua.jpg"
+                alt="Thumbnail"
+                class="video-thumbnail-img"
+              />
+            </a>
+            <div class="video-info">
+              <a href="#"
+                ><img
+                  src="img/avatar/fbnc-vietnam.jpg"
+                  alt="Avatar"
+                  class="channel-icon"
+              /></a>
+              <div class="video-details">
+                <div class="video-title">
+                  World news of the week Overview of the confrontation between
+                  Russia and Ukraine - NATO FBNC
+                </div>
+                <div class="video-channel-name">FBNC Vietnam</div>
+                <div class="video-metadata">
+                  <span>3M views</span>
+                  •
+                  <span>9 days ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="video"
+            data-link="https://www.youtube.com/watch?v=l3LpC22F2Ww"
+          >
+            <a href="" class="video-thumbnail" data-duration="43:27">
+              <img
+                src="img/thumbnail/hem-cut.jpg"
+                alt="Thumbnail"
+                class="video-thumbnail-img"
+              />
+            </a>
+            <div class="video-info">
+              <a href="#"
+                ><img
+                  src="img/avatar/tran-thanh.jpg"
+                  alt="Avatar"
+                  class="channel-icon"
+              /></a>
+              <div class="video-details">
+                <div class="video-title">
+                  HẺM CỤT TẬP CUỐI | TRANH THỦ YÊU THƯƠNG | NS Ngọc Giàu, Trấn
+                  Thành, Lê Giang, Dương Lâm, Quốc Khánh
+                </div>
+                <div class="video-channel-name">TRẤN THÀNH TOWN</div>
+                <div class="video-metadata">
+                  <span>11M views</span>
+                  •
+                  <span>13 days ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="video"
+            data-link="https://www.youtube.com/watch?v=D80QnP0iRBo"
+          >
+            <a href="" class="video-thumbnail" data-duration="5:05">
+              <img
+                src="img/thumbnail/dau-nhat-la-lang-im.jpg"
+                alt="Thumbnail"
+                class="video-thumbnail-img"
+              />
+            </a>
+            <div class="video-info">
+              <a href="#"
+                ><img
+                  src="img/avatar/erik.jpg"
+                  alt="Avatar"
+                  class="channel-icon"
+              /></a>
+              <div class="video-details">
+                <div class="video-title">
+                  ERIK - Đau Nhất Là Lặng Im (Official Music Video)
+                </div>
+                <div class="video-channel-name">ERIK Offical</div>
+                <div class="video-metadata">
+                  <span>8M views</span>
+                  •
+                  <span>12 days ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="video"
+            data-link="https://www.youtube.com/watch?v=LDjIeLl2xAU"
+          >
+            <a href="" class="video-thumbnail" data-duration="4:27">
+              <img
+                src="img/thumbnail/my-tam-ngay-chua-giong-bao.jpg"
+                alt="Thumbnail"
+                class="video-thumbnail-img"
+              />
+            </a>
+            <div class="video-info">
+              <a href="#"
+                ><img
+                  src="img/avatar/my-tam.jpg"
+                  alt="Avatar"
+                  class="channel-icon"
+              /></a>
+              <div class="video-details">
+                <div class="video-title">
+                  MỸ TÂM - NGÀY CHƯA GIÔNG BÃO (LIVE) | MY SOUL 1981
+                </div>
+                <div class="video-channel-name">My Tam</div>
+                <div class="video-metadata">
+                  <span>1M views</span>
+                  •
+                  <span>3 days ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
       </div>
     </section>
     <!-- Optional JavaScript -->
